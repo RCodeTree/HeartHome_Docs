@@ -1,0 +1,14 @@
+前端：
+	1.Vue3的分层路由匹配
+		Vue Router 通过以下方式区分渲染位置：
+			<router-view> 的层级与路由配置的 children 层级相对应。
+			根组件 (App.vue) 中的 <router-view> 渲染与 URL 匹配的 顶层 路由组件。
+			父路由组件 (Page.vue) 中的 <router-view> 渲染与 URL 剩余部分匹配的 子 路由组件。
+	2.Vue3状态管理Pinia
+
+后端：
+	maven项目构建：
+		1.MAVEN分模块
+			pom.xml依赖管理
+		2.MAVEN依赖插件版本
+			之前因一直jdk版本和maven插件版本不兼容问题项目构建一直报错，但是通过trae在父模块中将lombok的版本升级到1.18.32彻底解决了项目的构建报错问题
